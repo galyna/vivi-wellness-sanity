@@ -76,10 +76,12 @@ export default function CartPage() {
             <div className="font-semibold text-lg">Total:</div>
             <div className="font-bold text-2xl text-coral">${total}</div>
           </div>
-          <Link href="/checkout" className="mt-8 w-full py-3 rounded-full bg-coral text-white font-bold text-lg hover:bg-coral/90 transition block text-center">
+          <div className="flex justify-center  align-baseline border-t pt-6 mt-6 md:flex-row flex-col gap-4">
+          <Link href="/checkout" className="w-full py-3 rounded-full bg-coral text-white font-bold text-lg hover:bg-coral/90 transition block text-center">
             Checkout
           </Link>
-          <button onClick={clearCart} className="mt-3 w-full py-2 rounded-full bg-gray-100 text-gray-500 font-medium hover:bg-gray-200">Clear cart</button>
+          <button onClick={clearCart} className=" w-full py-3  rounded-full bg-gray-100 text-gray-500 font-medium hover:bg-gray-200">Clear cart</button>
+          </div>
         </>
       )}
     </div>
