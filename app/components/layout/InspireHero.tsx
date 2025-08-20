@@ -10,7 +10,7 @@ const InspireHero = async ({ id }: InspireHeroProps) => {
   if (!data) return null;
 
   return (
-    <section className="relative w-full h-[80vh] flex items-center justify-center text-white">
+    <section className="relative w-full h-[80vh] max-h-[90vh] flex items-center justify-center text-white">
       {/* Бэкграунд: видео или изображение */}
       {data.video ? (
         <video
@@ -19,6 +19,10 @@ const InspireHero = async ({ id }: InspireHeroProps) => {
           loop
           muted
           playsInline
+          preload="auto"
+          poster={data.image.src}
+          width={600}
+          height={300}
           className="absolute inset-0 w-full h-full object-cover"
         />
       ) : data.image ? (

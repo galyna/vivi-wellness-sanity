@@ -9,7 +9,7 @@ const HERO_ID = "hero-1"; // или другой id из Sanity
 const Hero = async () => {
   const hero = await getCatalogHeroData(HERO_ID);
   return (
-    <section className="relative w-full h-min-[500px] h-[90vh] lg:h-[70vh] text-white pt-20">
+    <section className="relative w-full h-min-[500px] h-[90vh] lg:h-[70vh] max-h-[90vh] text-white pt-20">
       {hero?.video ? (
         <video
           src={hero.video}
@@ -18,6 +18,10 @@ const Hero = async () => {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
+          preload="auto"
+          poster={hero.image.src}
+          width={600}
+          height={300}
         />
       ) : hero?.image ? (
         <Image
