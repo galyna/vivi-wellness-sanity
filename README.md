@@ -5,7 +5,7 @@
 
 💻  [vivi-wellness.vercel.app](https://vivi-wellness.vercel.app/)
 
-![Vivi Wellness preview](./public/images/og-previe.png)
+![Vivi Wellness preview](./public/og-previe.png)
 
 ---
 
