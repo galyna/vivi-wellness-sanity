@@ -14,16 +14,53 @@
 Framework & Core
 
 Next.js 15 (App Router)
+ — modern React framework for SSR/SSG
+
 React 18
+ — UI library
+
 Tailwind CSS 3
+ — utility-first styling
+
 PostCSS
+ — CSS post-processing
+
+State & Data
+
 Zustand
+ — lightweight state management
+
 TanStack React Query
+ — asynchronous data fetching & caching
+
+CMS & Commerce
+
 Sanity Client
+ — headless CMS for structured content
+
 PortableText React
-React Markdow
+ — rendering Sanity Portable Text
+
+React Markdown
+ — markdown content support
+
+AI & Integrations
+
 OpenAI Edge
+ — serverless AI queries on edge functions
+
 AI SDK
+ — chatbot & generative AI features
+
+Tooling
+
+TypeScript 5
+ — static typing
+
+ESLint 9
+ + eslint-config-next
+ — linting & code style
+
 
 
 ## 🎯 Features
